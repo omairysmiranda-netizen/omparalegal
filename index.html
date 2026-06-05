@@ -67,6 +67,7 @@
   }
   .nav-logo span { color: var(--gold); }
   .nav-links { display: flex; gap: 32px; list-style: none; }
+  .hamburger { display: none; }
   .nav-links a {
     color: #A2C8D4; text-decoration: none; font-size: 12px;
     letter-spacing: 1.5px; font-weight: 500; text-transform: uppercase;
@@ -569,6 +570,40 @@
     flex-shrink: 0; margin-top: 1px;
   }
 
+  @media (max-width: 768px) {
+    section { padding: 60px 24px; }
+
+    nav { position: relative; flex-wrap: wrap; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 24px; gap: 16px; z-index: 999; }
+    .nav-links.open { display: flex; }
+    .hamburger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); }
+
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-content { order: 2; padding: 40px 24px; }
+    .hero-photo-col { order: 1; justify-content: center; padding-top: 40px; }
+    .hero-photo-wrap { width: 280px; height: 340px; }
+    .hero-name { font-size: 20px; }
+
+    .trust-bar { flex-direction: column; }
+    .trust-item { border-right: none; border-bottom: 1px solid var(--ltgray); justify-content: center; }
+    .trust-item:last-child { border-bottom: none; }
+
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .whyme-grid { grid-template-columns: 1fr; }
+    .support-grid { grid-template-columns: 1fr; }
+    .attorney-grid { grid-template-columns: 1fr; }
+    .trust-track { grid-template-columns: 1fr; }
+
+    .audience-tabs { flex-direction: column; }
+    .aud-btn { width: 100%; text-align: center; }
+
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .form-row { grid-template-columns: 1fr; }
+
+    footer { flex-direction: column; align-items: center; text-align: center; padding: 40px 24px; }
+  }
 </style>
 </head>
 <body class="en">
@@ -598,6 +633,9 @@
     <li><a href="#gallery" data-en>Gallery</a><a href="#gallery" data-es style="display:none">Galería</a></li>
     <li><a href="#contact" data-en>Contact</a><a href="#contact" data-es style="display:none">Contacto</a></li>
   </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -1193,6 +1231,10 @@
       btn.style.background = '';
       e.target.reset();
     }, 3000);
+  }
+
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
   }
 </script>
 </body>
