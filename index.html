@@ -106,7 +106,7 @@
   }
   .hero-left {
     display: flex; flex-direction: column; justify-content: center;
-    padding: 80px 60px 80px 80px;
+    padding: 60px 48px 60px 60px;
     position: relative; z-index: 2;
   }
   .hero-eyebrow {
@@ -224,7 +224,7 @@
   .trust-text strong { color: var(--navy); display: block; font-size: 13px; }
 
   /* ── SECTION BASE ── */
-  section { padding: 100px 80px; }
+  section { padding: 72px 60px; }
   .section-label {
     font-size: 11px; letter-spacing: 3px; color: var(--gold);
     text-transform: uppercase; font-weight: 600; margin-bottom: 12px;
@@ -243,10 +243,10 @@
   /* ── ABOUT ── */
   .about { background: var(--white); }
   .about-grid {
-    display: grid; grid-template-columns: 1fr;
-    gap: 0; align-items: center; max-width: 860px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.6fr;
+    gap: 60px; align-items: start; max-width: 1100px; margin: 0 auto;
   }
-  .about-img-wrap { display: none; }
+  .about-img-wrap { position: relative; }
   .about-img {
     width: 100%; aspect-ratio: 3/4;
     object-fit: cover; object-position: center top;
@@ -285,12 +285,12 @@
   /* ── SERVICES ── */
   .services { background: var(--cream); }
   .services-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 16px; max-width: 900px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; max-width: 1100px; margin: 0 auto;
   }
   .service-card {
     background: var(--white);
-    padding: 28px 28px;
+    padding: 28px 24px;
     border-top: 3px solid transparent;
     transition: all .3s; position: relative;
     overflow: hidden;
@@ -314,7 +314,7 @@
     letter-spacing: .5px; margin-bottom: 12px;
   }
   .service-desc { font-size: 14px; line-height: 1.7; color: var(--midgray); }
-  .service-card.full { grid-column: span 2; background: var(--navy); }
+  .service-card.full { grid-column: span 3; background: var(--navy); }
   .service-card.full .service-title { color: var(--gold); }
   .service-card.full .service-desc { color: #A2C8D4; }
   .service-card.full .service-num { color: rgba(255,255,255,.06); }
@@ -363,7 +363,7 @@
   .contact { background: var(--white); }
   .contact-grid {
     display: grid; grid-template-columns: 1fr 1.2fr;
-    gap: 80px; max-width: 1000px; margin: 0 auto; align-items: start;
+    gap: 60px; max-width: 1000px; margin: 0 auto; align-items: start;
   }
   .contact-info h3 {
     font-family: 'Cormorant Garamond', serif;
@@ -471,7 +471,7 @@
   .om-name-stack .tagline-sm { font-family: 'Jost', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(196,154,74,.6); margin-top: 2px; font-weight: 300; }
 
   /* ── SUPPORT IMAGES SECTION ── */
-  .support-section { padding: 100px 80px; background: var(--offwh); }
+  .support-section { padding: 72px 60px; background: var(--offwh); }
   .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1100px; margin: 0 auto; }
   .support-card { position: relative; overflow: hidden; }
   .support-card img { width: 100%; display: block; transition: transform .4s ease; }
@@ -611,8 +611,8 @@
     .trust-item:last-child { border-bottom: none; }
 
     /* About */
-    .about-grid { grid-template-columns: 1fr; gap: 32px; }
-    .about-img-wrap { display: block; max-width: 240px; margin: 0 auto; }
+    .about-grid { grid-template-columns: 1fr; gap: 28px; }
+    .about-img-wrap { max-width: 200px; margin: 0 auto; }
 
     /* Services */
     .services-grid { grid-template-columns: 1fr; gap: 12px; }
