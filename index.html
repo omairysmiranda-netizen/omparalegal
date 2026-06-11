@@ -243,10 +243,10 @@
   /* ── ABOUT ── */
   .about { background: var(--white); }
   .about-grid {
-    display: grid; grid-template-columns: 1fr 1.6fr;
-    gap: 60px; align-items: start; max-width: 1100px; margin: 0 auto;
+    display: block;
+    max-width: 900px; margin: 0 auto;
   }
-  .about-img-wrap { position: relative; }
+  .about-img-wrap { display: none; }
   .about-img {
     width: 100%; aspect-ratio: 3/4;
     object-fit: cover; object-position: center top;
@@ -265,9 +265,12 @@
     text-transform: uppercase;
     border-left: 3px solid var(--gold);
   }
+  .about-bio-cols {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 24px;
+  }
   .about-body p {
-    font-size: 16px; line-height: 1.75; color: var(--midgray);
-    margin-bottom: 20px;
+    font-size: 15px; line-height: 1.75; color: var(--midgray);
+    margin-bottom: 16px;
   }
   .about-body p strong { color: var(--navy); }
   .about-stats {
@@ -613,6 +616,7 @@
     /* About */
     .about-grid { grid-template-columns: 1fr; gap: 28px; }
     .about-img-wrap { max-width: 200px; margin: 0 auto; }
+    .about-bio-cols { grid-template-columns: 1fr; }
 
     /* Services */
     .services-grid { grid-template-columns: 1fr; gap: 12px; }
@@ -785,10 +789,12 @@
       <h2 class="section-title" data-en>10+ Years <em>Navigating</em> Immigration Law</h2>
       <h2 class="section-title" data-es style="display:none">Más de 10 Años <em>Navegando</em> el Derecho Migratorio</h2>
       <div class="section-divider"></div>
-      <p data-en>I am a <strong>Senior Immigration Paralegal</strong> with over 10 years of experience supporting immigration attorneys in high-volume legal environments across Florida and beyond. My work spans asylum, removal defense, adjustment of status, family-based petitions, waivers, and humanitarian filings.</p>
-      <p data-es style="display:none">Soy una <strong>Paralegal Senior de Inmigración</strong> con más de 10 años de experiencia apoyando a abogados en entornos legales de alto volumen. Mi trabajo abarca asilo, defensa contra deportación, ajuste de estatus, peticiones familiares, exenciones y solicitudes humanitarias.</p>
-      <p data-en>I hold a <strong>Paralegal Certification from FIU</strong> , a rigorous program covering legal research, immigration procedures, and document drafting. Immigration Specialist with more than 10 years of experience. I am also a licensed and bonded <strong>Florida Notary Public</strong> and a <strong>native Spanish speaker</strong>, serving both English and Spanish-speaking clients and firms with equal fluency.</p>
-      <p data-es style="display:none">Cuento con una <strong>Certificación Paralegal de FIU</strong> , un programa riguroso que cubre investigación legal, procedimientos migratorios y redacción de documentos. Especialista en Inmigración con más de 10 años de experiencia. También soy <strong>Notaria Pública de Florida</strong> licenciada y asegurada, y <strong>hablante nativa de español</strong>, sirviendo a clientes y firmas en ambos idiomas con total fluidez.</p>
+      <div class="about-bio-cols">
+        <p data-en>I am a <strong>Senior Immigration Paralegal</strong> with over 10 years of experience supporting immigration attorneys in high-volume legal environments across Florida and beyond. My work spans asylum, removal defense, adjustment of status, family-based petitions, waivers, and humanitarian filings.</p>
+        <p data-es style="display:none">Soy una <strong>Paralegal Senior de Inmigración</strong> con más de 10 años de experiencia apoyando a abogados en entornos legales de alto volumen. Mi trabajo abarca asilo, defensa contra deportación, ajuste de estatus, peticiones familiares, exenciones y solicitudes humanitarias.</p>
+        <p data-en>I hold a <strong>Paralegal Certification from FIU</strong>, a rigorous program covering legal research, immigration procedures, and document drafting. I am also a licensed and bonded <strong>Florida Notary Public</strong> and a <strong>native Spanish speaker</strong>, serving both English and Spanish-speaking clients and firms with equal fluency.</p>
+        <p data-es style="display:none">Cuento con una <strong>Certificación Paralegal de FIU</strong>, un programa riguroso que cubre investigación legal, procedimientos migratorios y redacción de documentos. También soy <strong>Notaria Pública de Florida</strong> licenciada y asegurada, y <strong>hablante nativa de español</strong>, sirviendo a clientes y firmas en ambos idiomas con total fluidez.</p>
+      </div>
       <div class="audience-tabs">
         <button class="aud-btn active" onclick="switchAud(this,'attorneys')" data-en>For Attorneys</button>
         <button class="aud-btn active" onclick="switchAud(this,'attorneys')" data-es style="display:none">Para Abogados</button>
