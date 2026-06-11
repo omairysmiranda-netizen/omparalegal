@@ -1189,8 +1189,8 @@
       </div>
     </div>
     <div>
-      <form class="contact-form" action="https://formspree.io/f/xdavwkwp" method="POST">
-        <input type="hidden" name="_subject" value="New Lead - omparalegal.com"/>
+      <form class="contact-form" id="contact-form">
+
         <div class="form-row">
           <div class="form-group">
             <label data-en>First Name</label>
@@ -1269,20 +1269,42 @@
     });
   }
 
-  function handleSubmit(e) {
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
+    const btn = this.querySelector('.form-submit');
     const isEs = document.body.classList.contains('es');
-    btn.textContent = isEs ? '✓ Mensaje Enviado' : '✓ Message Sent';
-    btn.style.background = '#2A7F8F';
-    setTimeout(() => {
-      btn.innerHTML = isEs
-        ? '<span>Enviar Mensaje</span>'
-        : '<span>Send Message</span>';
-      btn.style.background = '';
-      e.target.reset();
-    }, 3000);
-  }
+    btn.disabled = true;
+    btn.textContent = isEs ? 'Enviando...' : 'Sending...';
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          first_name: this.first_name.value,
+          last_name: this.last_name.value,
+          email: this.email.value,
+          service: this.service.value,
+          message: this.message.value,
+        }),
+      });
+      if (res.ok) {
+        btn.textContent = isEs ? '✓ Mensaje Enviado' : '✓ Message Sent';
+        btn.style.background = '#2A7F8F';
+        this.reset();
+        setTimeout(() => {
+          btn.innerHTML = isEs ? '<span>Enviar Mensaje</span>' : '<span>Send Message</span>';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      btn.textContent = isEs ? 'Error. Intenta de nuevo.' : 'Error. Please try again.';
+      btn.style.background = '#c0392b';
+      btn.disabled = false;
+    }
+  });
 
   function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('open');
