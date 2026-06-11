@@ -1189,46 +1189,40 @@
       </div>
     </div>
     <div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form class="contact-form" action="https://formspree.io/f/xdavwkwp" method="POST">
+        <input type="hidden" name="_subject" value="New Lead - omparalegal.com"/>
         <div class="form-row">
           <div class="form-group">
             <label data-en>First Name</label>
             <label data-es style="display:none">Nombre</label>
-            <input type="text" placeholder="Maria"/>
+            <input type="text" name="first_name" placeholder="Maria"/>
           </div>
           <div class="form-group">
             <label data-en>Last Name</label>
             <label data-es style="display:none">Apellido</label>
-            <input type="text" placeholder="Rodriguez"/>
+            <input type="text" name="last_name" placeholder="Rodriguez"/>
           </div>
         </div>
         <div class="form-group">
           <label>Email</label>
-          <input type="email" placeholder="email@example.com"/>
+          <input type="email" name="email" placeholder="email@example.com"/>
         </div>
         <div class="form-group">
           <label data-en>Service Needed</label>
           <label data-es style="display:none">Servicio Requerido</label>
-          <select>
-            <option data-en>Select a service...</option>
-            <option data-es style="display:none">Seleccione un servicio...</option>
-            <option data-en>Immigration Paralegal Support</option>
-            <option data-es style="display:none">Apoyo Paralegal de Inmigración</option>
-            <option data-en>USCIS / EOIR Document Preparation</option>
-            <option data-es style="display:none">Preparación de Documentos USCIS/EOIR</option>
-            <option data-en>Case Consultation</option>
-            <option data-es style="display:none">Consultoría de Caso</option>
-            <option data-en>Legal Translation / Interpretation</option>
-            <option data-es style="display:none">Traducción / Interpretación Legal</option>
-            <option data-en>Document Notarization</option>
-            <option data-es style="display:none">Notarización de Documentos</option>
+          <select name="service">
+            <option value="">Select a service...</option>
+            <option value="Immigration Paralegal Support">Immigration Paralegal Support</option>
+            <option value="USCIS / EOIR Document Preparation">USCIS / EOIR Document Preparation</option>
+            <option value="Case Consultation">Case Consultation</option>
+            <option value="Legal Translation / Interpretation">Legal Translation / Interpretation</option>
+            <option value="Document Notarization">Document Notarization</option>
           </select>
         </div>
         <div class="form-group">
           <label data-en>Message</label>
           <label data-es style="display:none">Mensaje</label>
-          <textarea data-en placeholder="Briefly describe your needs..."></textarea>
-          <textarea data-es style="display:none" placeholder="Describa brevemente sus necesidades..."></textarea>
+          <textarea name="message" placeholder="Briefly describe your needs..."></textarea>
         </div>
         <button type="submit" class="form-submit">
           <span data-en>Send Message</span>
