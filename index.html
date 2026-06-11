@@ -1317,6 +1317,12 @@
     document.querySelectorAll('.lang-btn').forEach(b => {
       b.classList.toggle('active', b.textContent === lang.toUpperCase());
     });
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.style.display = lang === 'es' ? 'none' : '';
+    });
+    document.querySelectorAll('[data-es]').forEach(el => {
+      el.style.display = lang === 'es' ? '' : 'none';
+    });
   }
 
   document.getElementById('contact-form').addEventListener('submit', async function(e) {
