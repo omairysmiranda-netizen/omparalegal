@@ -407,6 +407,22 @@
   }
   .form-submit:hover { background: var(--teal); }
 
+  /* Newsletter */
+  .newsletter-section { background: var(--navy); padding: 80px 60px; text-align: center; }
+  .newsletter-inner { max-width: 680px; margin: 0 auto; }
+  .newsletter-section .section-label { color: var(--gold-lt); }
+  .newsletter-section .section-title { color: var(--white); }
+  .newsletter-sub { color: rgba(255,255,255,0.7); font-family: Jost, sans-serif; font-size: 15px; line-height: 1.7; margin: 16px 0 36px; }
+  .newsletter-fields { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .newsletter-fields input { flex: 1; min-width: 180px; padding: 14px 18px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.07); color: var(--white); font-family: Jost, sans-serif; font-size: 14px; border-radius: 4px; outline: none; }
+  .newsletter-fields input::placeholder { color: rgba(255,255,255,0.4); }
+  .newsletter-fields input:focus { border-color: var(--gold); }
+  .newsletter-btn { padding: 14px 32px; background: var(--gold); color: var(--navy); font-family: Jost, sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; border: none; border-radius: 4px; cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+  .newsletter-btn:hover { background: var(--gold-lt); }
+  .newsletter-status { margin-top: 16px; font-family: Jost, sans-serif; font-size: 14px; min-height: 20px; }
+  .newsletter-status.success { color: #7DCEA0; }
+  .newsletter-status.error { color: #F1948A; }
+
   /* ── FOOTER ── */
   footer {
     background: var(--navy);
@@ -651,6 +667,9 @@
     /* Contact */
     .contact-grid { grid-template-columns: 1fr; gap: 36px; }
     .form-row { grid-template-columns: 1fr; }
+    .newsletter-section { padding: 60px 24px; }
+    .newsletter-fields { flex-direction: column; }
+    .newsletter-fields input, .newsletter-btn { width: 100%; }
     .contact-form input, .contact-form select, .contact-form textarea { font-size: 16px; }
 
     /* Footer */
@@ -1162,6 +1181,29 @@
   </div>
 </section>
 
+<!-- NEWSLETTER -->
+<section class="newsletter-section" id="newsletter">
+  <div class="newsletter-inner">
+    <p class="section-label" data-en>Stay Informed</p>
+    <p class="section-label" data-es style="display:none">Mantente Informado</p>
+    <h2 class="section-title" data-en>Immigration <em>Updates</em> in Your Inbox</h2>
+    <h2 class="section-title" data-es style="display:none">Novedades de <em>Inmigración</em> en tu Correo</h2>
+    <p class="newsletter-sub" data-en>Monthly digest: USCIS processing updates, Visa Bulletin dates, practical tips, and case insights — in plain English and Spanish. No spam, unsubscribe anytime.</p>
+    <p class="newsletter-sub" data-es style="display:none">Resumen mensual: actualizaciones de USCIS, fechas del Boletín de Visas, consejos prácticos y novedades de casos, en inglés y español. Sin spam, cancela cuando quieras.</p>
+    <form class="newsletter-form" id="newsletter-form">
+      <div class="newsletter-fields">
+        <input type="text" name="first_name" placeholder="First Name / Nombre" required/>
+        <input type="email" name="email" placeholder="Email" required/>
+        <button type="submit" class="newsletter-btn">
+          <span data-en>Subscribe</span>
+          <span data-es style="display:none">Suscribirme</span>
+        </button>
+      </div>
+      <p class="newsletter-status" id="newsletter-status"></p>
+    </form>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-grid">
@@ -1314,6 +1356,31 @@
   function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('open');
   }
+
+  document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const status = document.getElementById('newsletter-status');
+    const btn = this.querySelector('.newsletter-btn');
+    const data = { first_name: this.first_name.value, email: this.email.value };
+    btn.disabled = true;
+    status.className = 'newsletter-status';
+    status.textContent = '';
+    try {
+      const r = await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      if (r.ok) {
+        status.className = 'newsletter-status success';
+        status.textContent = document.body.classList.contains('es') ? '¡Suscripción confirmada! Gracias.' : 'Subscribed! Thank you.';
+        this.reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.className = 'newsletter-status error';
+      status.textContent = document.body.classList.contains('es') ? 'Error. Intenta de nuevo.' : 'Something went wrong. Please try again.';
+    } finally {
+      btn.disabled = false;
+    }
+  });
 </script>
 </body>
 </html>
