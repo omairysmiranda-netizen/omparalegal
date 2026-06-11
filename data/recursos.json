@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "icon": "📋",
+    "category_en": "Adjustment of Status",
+    "category_es": "Ajuste de Estatus",
+    "title_en": "Adjustment of Status Document Checklist",
+    "title_es": "Lista de Documentos para Ajuste de Estatus",
+    "desc_en": "Complete list of documents required for I-485 filing, including supporting evidence, photos, and medical exam requirements.",
+    "desc_es": "Lista completa de documentos requeridos para la presentación del I-485, incluyendo evidencia de apoyo, fotos y requisitos del examen médico.",
+    "type_en": "Checklist",
+    "type_es": "Lista de Verificación"
+  },
+  {
+    "id": 2,
+    "icon": "🏛️",
+    "category_en": "Citizenship",
+    "category_es": "Ciudadanía",
+    "title_en": "N-400 Naturalization Interview Prep Guide",
+    "title_es": "Guía de Preparación para la Entrevista de Naturalización N-400",
+    "desc_en": "What to bring, what to expect, and how to prepare for your naturalization interview. Covers civics test tips and common interview questions.",
+    "desc_es": "Qué llevar, qué esperar y cómo prepararse para la entrevista de naturalización. Incluye consejos para el examen de educación cívica y preguntas frecuentes.",
+    "type_en": "Guide",
+    "type_es": "Guía"
+  },
+  {
+    "id": 3,
+    "icon": "👨‍👩‍👧",
+    "category_en": "Family Petitions",
+    "category_es": "Peticiones Familiares",
+    "title_en": "I-130 Family Petition: What You Need to Know",
+    "title_es": "Petición Familiar I-130: Lo Que Necesitas Saber",
+    "desc_en": "Step-by-step overview of the I-130 petition process for immediate relatives and family preference categories.",
+    "desc_es": "Resumen paso a paso del proceso de petición I-130 para familiares inmediatos y categorías de preferencia familiar.",
+    "type_en": "Guide",
+    "type_es": "Guía"
+  },
+  {
+    "id": 4,
+    "icon": "🛡️",
+    "category_en": "VAWA",
+    "category_es": "VAWA",
+    "title_en": "VAWA Self-Petition: Confidential Resources",
+    "title_es": "Auto-Petición VAWA: Recursos Confidenciales",
+    "desc_en": "Information for survivors of domestic violence on how to self-petition for immigration relief under VAWA, without the abuser's knowledge.",
+    "desc_es": "Información para sobrevivientes de violencia doméstica sobre cómo auto-peticionarse para obtener alivio migratorio bajo VAWA, sin el conocimiento del abusador.",
+    "type_en": "Info Sheet",
+    "type_es": "Hoja Informativa"
+  },
+  {
+    "id": 5,
+    "icon": "✉️",
+    "category_en": "RFE Response",
+    "category_es": "Respuesta a RFE",
+    "title_en": "Responding to a Request for Evidence (RFE)",
+    "title_es": "Cómo Responder a una Solicitud de Evidencia (RFE)",
+    "desc_en": "What an RFE means, how much time you have to respond, and the key steps to build a strong response package.",
+    "desc_es": "Qué significa un RFE, cuánto tiempo tienes para responder y los pasos clave para construir un paquete de respuesta sólido.",
+    "type_en": "Guide",
+    "type_es": "Guía"
+  },
+  {
+    "id": 6,
+    "icon": "🌍",
+    "category_en": "Consular Processing",
+    "category_es": "Proceso Consular",
+    "title_en": "Consular Processing vs. Adjustment of Status",
+    "title_es": "Proceso Consular vs. Ajuste de Estatus",
+    "desc_en": "Understand the differences, timelines, and eligibility requirements for both paths to lawful permanent residence.",
+    "desc_es": "Comprende las diferencias, los plazos y los requisitos de elegibilidad para ambas vías hacia la residencia permanente legal.",
+    "type_en": "Comparison",
+    "type_es": "Comparación"
+  }
+]

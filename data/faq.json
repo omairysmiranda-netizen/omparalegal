@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "category_en": "General",
+    "category_es": "General",
+    "q_en": "What is the difference between a paralegal and an immigration attorney?",
+    "q_es": "¿Cuál es la diferencia entre un paralegal y un abogado de inmigración?",
+    "a_en": "A paralegal provides document preparation, case support, and informational guidance, but cannot give legal advice or represent clients in court. An immigration attorney is licensed to practice law, give legal advice, and represent clients before immigration courts and agencies. I work alongside attorneys and can connect you with trusted counsel when legal representation is needed.",
+    "a_es": "Un paralegal prepara documentos, apoya en casos y brinda orientación informativa, pero no puede dar asesoría legal ni representar clientes en corte. Un abogado de inmigración tiene licencia para ejercer la ley, dar asesoría legal y representar clientes ante cortes y agencias de inmigración. Yo trabajo junto a abogados y puedo conectarte con un abogado de confianza cuando se necesita representación legal."
+  },
+  {
+    "id": 2,
+    "category_en": "Services",
+    "category_es": "Servicios",
+    "q_en": "Can you help me with my adjustment of status application?",
+    "q_es": "¿Puedes ayudarme con mi solicitud de ajuste de estatus?",
+    "a_en": "Yes. I specialize in adjustment of status (I-485) document preparation, including organizing supporting evidence, completing required forms accurately, and preparing your package for submission. I also help with RFE responses if USCIS requests additional evidence.",
+    "a_es": "Sí. Me especializo en la preparación de documentos para el ajuste de estatus (I-485), incluyendo la organización de evidencia de apoyo, el llenado preciso de formularios y la preparación de tu paquete para presentación. También ayudo con respuestas a RFE si USCIS solicita evidencia adicional."
+  },
+  {
+    "id": 3,
+    "category_en": "Services",
+    "category_es": "Servicios",
+    "q_en": "Do you work with immigration attorneys or only direct clients?",
+    "q_es": "¿Trabajas con abogados de inmigración o solo con clientes directos?",
+    "a_en": "Both. I work as a remote paralegal for immigration law firms and boutique practices, and I also serve individuals directly for document preparation and case consultation. All services are clearly scoped to paralegal work.",
+    "a_es": "Ambos. Trabajo como paralegal remota para firmas de abogados de inmigración y prácticas boutique, y también atiendo a personas directamente para preparación de documentos y consultas de casos. Todos los servicios están claramente delimitados al trabajo paralegal."
+  },
+  {
+    "id": 4,
+    "category_en": "Process",
+    "category_es": "Proceso",
+    "q_en": "How long does the adjustment of status process take?",
+    "q_es": "¿Cuánto tiempo tarda el proceso de ajuste de estatus?",
+    "a_en": "Processing times vary significantly based on the USCIS field office, your visa category, and whether you are an immediate relative or family preference category. Immediate relatives of US citizens generally see the shortest timelines. I recommend checking current USCIS processing times on their website and consulting during a case review session.",
+    "a_es": "Los tiempos de procesamiento varían significativamente según la oficina de campo de USCIS, tu categoría de visa y si eres familiar inmediato o categoría de preferencia familiar. Los familiares inmediatos de ciudadanos estadounidenses generalmente tienen los plazos más cortos. Recomiendo verificar los tiempos actuales en el sitio de USCIS y consultar en una sesión de revisión de caso."
+  },
+  {
+    "id": 5,
+    "category_en": "VAWA",
+    "category_es": "VAWA",
+    "q_en": "Is the VAWA process confidential?",
+    "q_es": "¿Es confidencial el proceso de VAWA?",
+    "a_en": "Yes. USCIS is prohibited by law from disclosing information about VAWA self-petitioners to the abuser or their representatives. The process is designed to be confidential and safe. I handle all VAWA-related consultations with strict privacy and sensitivity.",
+    "a_es": "Sí. La ley prohíbe a USCIS divulgar información sobre los auto-peticionarios de VAWA al abusador o sus representantes. El proceso está diseñado para ser confidencial y seguro. Manejo todas las consultas relacionadas con VAWA con estricta privacidad y sensibilidad."
+  },
+  {
+    "id": 6,
+    "category_en": "Remote",
+    "category_es": "Remoto",
+    "q_en": "Do I need to be in Florida to work with you?",
+    "q_es": "¿Necesito estar en Florida para trabajar contigo?",
+    "a_en": "No. I work fully remotely and serve clients and law firms nationwide. All document preparation, consultations, and communications are handled digitally. My Florida Notary Public commission allows me to notarize documents for Florida-based matters.",
+    "a_es": "No. Trabajo completamente de forma remota y atiendo a clientes y firmas de abogados en todo el país. Toda la preparación de documentos, consultas y comunicaciones se manejan de forma digital. Mi comisión como Notaria Pública de Florida me permite notarizar documentos para asuntos relacionados con Florida."
+  }
+]

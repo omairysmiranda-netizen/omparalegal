@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-10",
+    "category_en": "USCIS Update",
+    "category_es": "Actualización USCIS",
+    "title_en": "USCIS Expands Premium Processing for More Visa Categories",
+    "title_es": "USCIS Amplía el Procesamiento Premium para Más Categorías de Visa",
+    "summary_en": "USCIS announced the expansion of premium processing eligibility to additional employment-based categories, reducing wait times for qualifying petitions.",
+    "summary_es": "USCIS anunció la ampliación de la elegibilidad para el procesamiento premium a categorías adicionales basadas en empleo, reduciendo los tiempos de espera para peticiones calificadas.",
+    "link": "https://www.uscis.gov/newsroom"
+  },
+  {
+    "id": 2,
+    "date": "2026-06-05",
+    "category_en": "Visa Bulletin",
+    "category_es": "Boletín de Visas",
+    "title_en": "June 2026 Visa Bulletin: Movement in Family Preference Categories",
+    "title_es": "Boletín de Visas de Junio 2026: Avances en Categorías de Preferencia Familiar",
+    "summary_en": "The June Visa Bulletin shows forward movement in F2A and F3 family preference categories. Applicants with priority dates in these categories should review their eligibility.",
+    "summary_es": "El Boletín de Visas de junio muestra avances en las categorías de preferencia familiar F2A y F3. Los solicitantes con fechas de prioridad en estas categorías deben revisar su elegibilidad.",
+    "link": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html"
+  },
+  {
+    "id": 3,
+    "date": "2026-05-28",
+    "category_en": "Policy",
+    "category_es": "Política",
+    "title_en": "New Guidelines for VAWA Self-Petitioners Released",
+    "title_es": "Nuevas Directrices para Auto-Peticionarios VAWA Publicadas",
+    "summary_en": "USCIS released updated guidance for VAWA self-petitioners, clarifying documentation requirements and interview procedures for survivors of domestic violence.",
+    "summary_es": "USCIS publicó orientación actualizada para los auto-peticionarios de VAWA, aclarando los requisitos de documentación y los procedimientos de entrevista para sobrevivientes de violencia doméstica.",
+    "link": "https://www.uscis.gov/humanitarian/abused-spouse-children-and-parents"
+  }
+]

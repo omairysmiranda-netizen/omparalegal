@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Example: Maria Lopez, Esq.",
+    "firm": "Lopez Immigration Law",
+    "location": "Miami, FL",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "specialties_en": ["Asylum", "Removal Defense", "Family Petitions"],
+    "specialties_es": ["Asilo", "Defensa contra Deportación", "Peticiones Familiares"],
+    "languages_en": "English, Spanish",
+    "languages_es": "Inglés, Español",
+    "note_en": "Trusted colleague with 15+ years in immigration law. Highly recommended for complex removal cases.",
+    "note_es": "Colega de confianza con más de 15 años en derecho migratorio. Muy recomendada para casos complejos de deportación."
+  }
+]
