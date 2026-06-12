@@ -243,19 +243,11 @@ function showGrid() {
 
 function applyFilter(f) { currentFilter = f; renderGrid(f); }
 
-// Load all published posts from blog/ folder via GitHub API
 async function loadPosts() {
   try {
-    const res = await fetch('https://api.github.com/repos/omairysmiranda-netizen/omparalegal/contents/blog');
+    const res = await fetch('/api/blog-posts');
     if (!res.ok) { renderGrid('all'); return; }
-    const files = await res.json();
-    const jsonFiles = files.filter(f => f.name.endsWith('.json'));
-    const posts = await Promise.all(
-      jsonFiles.map(f => fetch(f.download_url).then(r => r.json()))
-    );
-    allPosts = posts
-      .filter(p => p.published)
-      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    allPosts = await res.json();
     renderGrid('all');
   } catch {
     renderGrid('all');
