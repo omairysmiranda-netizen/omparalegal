@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog — Omairys Miranda</title>
+<meta name="description" content="Immigration insights, USCIS updates, and practical guides by Omairys Miranda, Senior Immigration Paralegal. Bilingual EN/ES."/>
+<link rel="canonical" href="https://www.omparalegal.com/blog"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC4EKQCZQG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZC4EKQCZQG');</script>
+<style>
+  :root {
+    --navy:#16253D; --teal:#2A7F8F; --gold:#C49A4A; --gold-lt:#E8C97A;
+    --cream:#FAF6EF; --offwh:#F3EFE8; --charcoal:#2C2C2C; --midgray:#6B6B6B;
+    --ltgray:#D4CFC8; --white:#FFFFFF;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Jost,sans-serif;background:var(--cream);color:var(--charcoal);}
+  .lang-bar{background:var(--navy);padding:6px 32px;display:flex;align-items:center;gap:10px;justify-content:flex-end;}
+  .lang-btn{background:none;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);font-family:Jost,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;padding:3px 10px;cursor:pointer;border-radius:2px;transition:all 0.2s;}
+  .lang-btn.active{border-color:var(--gold);color:var(--gold);}
+  nav{background:var(--navy);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;}
+  .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .om-block{width:36px;height:36px;background:var(--gold);display:flex;align-items:center;justify-content:center;position:relative;}
+  .om-block::after{content:'';position:absolute;inset:-3px;border:1px solid var(--gold);pointer-events:none;}
+  .om-block span{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;color:var(--navy);}
+  .om-name-stack .first{font-family:Jost,sans-serif;font-size:12px;font-weight:300;color:var(--white);letter-spacing:0.08em;text-transform:uppercase;}
+  .om-name-stack .last{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--gold);}
+  .nav-links{list-style:none;display:flex;gap:32px;align-items:center;}
+  .nav-links a{font-size:13px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.8);text-decoration:none;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--gold);}
+  .page-hero{background:var(--navy);padding:64px 60px 56px;text-align:center;}
+  .section-label{font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:12px;}
+  .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,60px);font-weight:400;color:var(--white);line-height:1.1;}
+  .page-hero h1 em{font-style:italic;color:var(--gold);}
+  .page-hero p{color:rgba(255,255,255,0.65);font-size:15px;max-width:560px;margin:16px auto 0;line-height:1.7;}
+  .filter-bar{background:var(--offwh);border-bottom:1px solid var(--ltgray);padding:16px 60px;display:flex;gap:12px;flex-wrap:wrap;}
+  .filter-btn{background:none;border:1px solid var(--ltgray);color:var(--midgray);font-family:Jost,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:6px 16px;border-radius:2px;cursor:pointer;transition:all 0.2s;}
+  .filter-btn.active,.filter-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(196,154,74,0.06);}
+  .content-area{max-width:1100px;margin:0 auto;padding:60px;}
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .blog-card{background:var(--white);border:1px solid var(--ltgray);display:flex;flex-direction:column;transition:box-shadow 0.2s,transform 0.2s;cursor:pointer;}
+  .blog-card:hover{box-shadow:0 8px 32px rgba(22,37,61,0.1);transform:translateY(-2px);}
+  .blog-card-body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1;}
+  .blog-meta{display:flex;align-items:center;gap:10px;}
+  .blog-cat{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);background:var(--teal);padding:3px 10px;}
+  .blog-date{font-size:12px;color:var(--midgray);}
+  .blog-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--navy);line-height:1.3;}
+  .blog-summary{font-size:14px;color:var(--midgray);line-height:1.7;flex:1;}
+  .blog-read{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-top:auto;padding-top:16px;border-top:1px solid var(--ltgray);}
+  .empty-state{text-align:center;padding:80px 20px;color:var(--midgray);}
+
+  /* Post view */
+  .post-view{display:none;max-width:780px;margin:0 auto;padding:60px;}
+  .post-view.active{display:block;}
+  .blog-grid-wrap{transition:opacity 0.2s;}
+  .back-btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--teal);background:none;border:none;cursor:pointer;padding:0;margin-bottom:32px;}
+  .back-btn:hover{color:var(--gold);}
+  .post-header{margin-bottom:40px;padding-bottom:32px;border-bottom:1px solid var(--ltgray);}
+  .post-cat{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--white);background:var(--teal);padding:4px 12px;display:inline-block;margin-bottom:16px;}
+  .post-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:400;color:var(--navy);line-height:1.2;margin-bottom:12px;}
+  .post-title em{font-style:italic;color:var(--gold);}
+  .post-date{font-size:13px;color:var(--midgray);}
+  .post-content h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--navy);margin:28px 0 12px;}
+  .post-content p{font-size:16px;line-height:1.9;color:var(--charcoal);margin-bottom:16px;}
+  .post-content ul{padding-left:20px;margin-bottom:16px;}
+  .post-content li{font-size:15px;line-height:1.8;color:var(--charcoal);margin-bottom:6px;}
+  .post-cta{background:var(--navy);padding:36px;margin-top:48px;text-align:center;}
+  .post-cta p{color:rgba(255,255,255,0.7);font-size:14px;margin-bottom:16px;}
+  .post-cta a{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;padding:14px 32px;text-decoration:none;}
+  .post-cta a:hover{background:var(--gold-lt);}
+
+  footer{background:var(--navy);padding:40px 60px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  footer p{font-size:12px;color:rgba(255,255,255,0.5);}
+  footer a{color:rgba(255,255,255,0.5);text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+
+  @media(max-width:768px){
+    .page-hero{padding:48px 24px 40px;}
+    .filter-bar{padding:14px 24px;}
+    .content-area{padding:40px 24px;}
+    .blog-grid{grid-template-columns:1fr;gap:20px;}
+    .post-view{padding:40px 24px;}
+    nav{padding:0 20px;}
+    .nav-links{display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--navy);padding:24px;gap:16px;z-index:999;}
+    .nav-links.open{display:flex;}
+    .hamburger{display:flex;}
+    footer{flex-direction:column;align-items:center;text-align:center;padding:36px 24px;}
+  }
+</style>
+</head>
+<body class="en">
+
+<div class="lang-bar">
+  <span style="color:rgba(255,255,255,0.5);font-size:13px;">🌐</span>
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('es')">ES</button>
+</div>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="om-block"><span>OM</span></div>
+    <div class="om-name-stack">
+      <span class="first">Omairys</span>
+      <span class="last">Miranda</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/#about" data-en>About</a><a href="/#about" data-es style="display:none">Sobre Mí</a></li>
+    <li><a href="/#services" data-en>Services</a><a href="/#services" data-es style="display:none">Servicios</a></li>
+    <li><a href="/noticias.html" data-en>News</a><a href="/noticias.html" data-es style="display:none">Noticias</a></li>
+    <li><a href="/recursos.html" data-en>Resources</a><a href="/recursos.html" data-es style="display:none">Recursos</a></li>
+    <li><a href="/faq.html" data-en>FAQ</a><a href="/faq.html" data-es style="display:none">FAQ</a></li>
+    <li><a href="/directorio.html" data-en>Directory</a><a href="/directorio.html" data-es style="display:none">Directorio</a></li>
+    <li><a href="/blog.html" class="active" data-en>Blog</a><a href="/blog.html" class="active" data-es style="display:none">Blog</a></li>
+    <li><a href="/#contact" data-en>Contact</a><a href="/#contact" data-es style="display:none">Contacto</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <p class="section-label" data-en>Immigration Insights</p>
+  <p class="section-label" data-es style="display:none">Perspectivas de Inmigración</p>
+  <h1 data-en>The <em>Blog</em></h1>
+  <h1 data-es style="display:none">El <em>Blog</em></h1>
+  <p data-en>Practical guides, USCIS updates, and immigration insights — published daily, in English and Spanish.</p>
+  <p data-es style="display:none">Guías prácticas, actualizaciones de USCIS y perspectivas de inmigración, publicadas diariamente en inglés y español.</p>
+</div>
+
+<div class="filter-bar" id="filter-bar"></div>
+
+<div class="content-area">
+  <div class="blog-grid-wrap" id="blog-grid-wrap">
+    <div class="blog-grid" id="blog-grid"></div>
+  </div>
+  <div class="post-view" id="post-view"></div>
+</div>
+
+<footer>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div class="om-block" style="width:36px;height:36px;"><span style="font-size:14px;">OM</span></div>
+    <div class="om-name-stack">
+      <span class="first">Omairys</span>
+      <span class="last" style="font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--gold);">Miranda</span>
+    </div>
+  </div>
+  <p data-en>© 2026 Omairys Miranda · Immigration Paralegal Services</p>
+  <p data-es style="display:none">© 2026 Omairys Miranda · Servicios Paralegal de Inmigración</p>
+  <p><a href="mailto:omairysmiranda@gmail.com">omairysmiranda@gmail.com</a></p>
+</footer>
+
+<script>
+const isEs = () => document.body.classList.contains('es');
+let allPosts = [];
+let currentFilter = 'all';
+
+function setLang(l) {
+  document.body.classList.toggle('es', l === 'es');
+  document.querySelectorAll('[data-en]').forEach(el => el.style.display = l === 'es' ? 'none' : '');
+  document.querySelectorAll('[data-es]').forEach(el => el.style.display = l === 'es' ? '' : 'none');
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === l.toUpperCase()));
+  renderGrid(currentFilter);
+}
+
+function toggleMenu() { document.getElementById('nav-links').classList.toggle('open'); }
+
+function formatDate(str) {
+  return new Date(str + 'T12:00:00').toLocaleDateString(isEs() ? 'es-US' : 'en-US', { year:'numeric', month:'long', day:'numeric' });
+}
+
+function renderFilters(posts) {
+  const bar = document.getElementById('filter-bar');
+  const cats = [...new Set(posts.map(p => isEs() ? p.category_es : p.category_en))];
+  const all = isEs() ? 'Todos' : 'All';
+  bar.innerHTML = `<button class="filter-btn ${currentFilter==='all'?'active':''}" onclick="applyFilter('all')">${all}</button>` +
+    cats.map(c => `<button class="filter-btn ${currentFilter===c?'active':''}" onclick="applyFilter('${c}')">${c}</button>`).join('');
+}
+
+function renderGrid(filter) {
+  showGrid();
+  const grid = document.getElementById('blog-grid');
+  const filtered = filter === 'all' ? allPosts : allPosts.filter(p => (isEs() ? p.category_es : p.category_en) === filter);
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty-state"><p>No posts yet. Check back soon.</p></div>';
+    renderFilters(allPosts);
+    return;
+  }
+  grid.innerHTML = filtered.map((p, i) => `
+    <div class="blog-card" onclick="showPost(${i})">
+      <div class="blog-card-body">
+        <div class="blog-meta">
+          <span class="blog-cat">${isEs() ? p.category_es : p.category_en}</span>
+          <span class="blog-date">${formatDate(p.date)}</span>
+        </div>
+        <h2 class="blog-title">${isEs() ? p.title_es : p.title_en}</h2>
+        <p class="blog-summary">${isEs() ? p.summary_es : p.summary_en}</p>
+        <div class="blog-read">${isEs() ? 'Leer más →' : 'Read more →'}</div>
+      </div>
+    </div>
+  `).join('');
+  renderFilters(allPosts);
+}
+
+function showPost(index) {
+  const p = allPosts[index];
+  const view = document.getElementById('post-view');
+  const readMore = isEs() ? 'Leer más →' : 'Read more →';
+  const ctaText = isEs() ? '¿Tienes preguntas sobre tu caso? Contáctame para una consulta.' : 'Have questions about your case? Contact me for a consultation.';
+  const ctaBtn = isEs() ? 'Contáctame' : 'Contact Me';
+
+  view.innerHTML = `
+    <button class="back-btn" onclick="showGrid()">← ${isEs() ? 'Volver al Blog' : 'Back to Blog'}</button>
+    <div class="post-header">
+      <span class="post-cat">${isEs() ? p.category_es : p.category_en}</span>
+      <h1 class="post-title">${isEs() ? p.title_es : p.title_en}</h1>
+      <p class="post-date">${formatDate(p.date)}</p>
+    </div>
+    <div class="post-content">${isEs() ? p.content_es : p.content_en}</div>
+    <div class="post-cta">
+      <p>${ctaText}</p>
+      <a href="/#contact">${ctaBtn}</a>
+    </div>
+  `;
+
+  document.getElementById('blog-grid-wrap').style.display = 'none';
+  document.getElementById('filter-bar').style.display = 'none';
+  view.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showGrid() {
+  document.getElementById('blog-grid-wrap').style.display = '';
+  document.getElementById('filter-bar').style.display = '';
+  document.getElementById('post-view').classList.remove('active');
+  renderGrid(currentFilter);
+}
+
+function applyFilter(f) { currentFilter = f; renderGrid(f); }
+
+// Load all published posts from blog/ folder via GitHub API
+async function loadPosts() {
+  try {
+    const res = await fetch('https://api.github.com/repos/omairysmiranda-netizen/omparalegal/contents/blog');
+    if (!res.ok) { renderGrid('all'); return; }
+    const files = await res.json();
+    const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+    const posts = await Promise.all(
+      jsonFiles.map(f => fetch(f.download_url).then(r => r.json()))
+    );
+    allPosts = posts
+      .filter(p => p.published)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    renderGrid('all');
+  } catch {
+    renderGrid('all');
+  }
+}
+
+loadPosts();
+</script>
+</body>
+</html>
