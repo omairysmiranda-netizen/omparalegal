@@ -183,7 +183,9 @@ function renderFilters(posts) {
 }
 
 function renderGrid(filter) {
-  showGrid();
+  document.getElementById('blog-grid-wrap').style.display = '';
+  document.getElementById('filter-bar').style.display = '';
+  document.getElementById('post-view').classList.remove('active');
   const grid = document.getElementById('blog-grid');
   const filtered = filter === 'all' ? allPosts : allPosts.filter(p => (isEs() ? p.category_es : p.category_en) === filter);
   if (!filtered.length) {
