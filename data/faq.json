@@ -37,15 +37,33 @@
   },
   {
     "id": 5,
-    "category_en": "General",
-    "category_es": "General",
-    "q_en": "Is the VAWA process confidential?",
-    "q_es": "¿Es confidencial el proceso de VAWA?",
-    "a_en": "Yes. USCIS is prohibited by law from disclosing information about VAWA self-petitioners to the abuser or their representatives. The process is designed to be confidential and safe. I handle all VAWA-related consultations with strict privacy and sensitivity.",
-    "a_es": "Sí. La ley prohíbe a USCIS divulgar información sobre los auto-peticionarios de VAWA al abusador o sus representantes. El proceso está diseñado para ser confidencial y seguro. Manejo todas las consultas relacionadas con VAWA con estricta privacidad y sensibilidad."
+    "category_en": "Services",
+    "category_es": "Servicios",
+    "q_en": "What is a notarization and when do I need one?",
+    "q_es": "¿Qué es una notarización y cuándo la necesito?",
+    "a_en": "A notarization is the official process by which a licensed Notary Public verifies the identity of a signer and witnesses the signing of a document to confirm it is authentic. In immigration cases, notarization is commonly required for affidavits, consent forms, and certain supporting documents submitted to USCIS or used in legal proceedings. As a licensed Florida Notary Public, I can notarize documents for individuals and law firms with accuracy and professionalism.",
+    "a_es": "Una notarización es el proceso oficial mediante el cual un Notario Público licenciado verifica la identidad del firmante y atestigua la firma de un documento para confirmar su autenticidad. En casos de inmigración, la notarización se requiere comúnmente para declaraciones juradas, formularios de consentimiento y ciertos documentos de respaldo presentados ante USCIS o utilizados en procedimientos legales. Como Notaria Pública de Florida licenciada, puedo notarizar documentos para personas y firmas de abogados con precisión y profesionalismo."
   },
   {
     "id": 6,
+    "category_en": "Attorneys",
+    "category_es": "Abogados",
+    "q_en": "How does the process work if I am an attorney who wants to work with you?",
+    "q_es": "¿Cómo funciona el proceso si soy un abogado que quiere trabajar conmigo?",
+    "a_en": "It starts with a conversation. Reach out through the contact form or directly by email and tell me about your firm, your current volume, and the type of support you need. From there, we define the scope of work, I sign an NDA if required, and we get started. I adapt to your firm's existing systems and workflows so the transition is seamless. I am available for single projects, ongoing retainers, or surge support during high-volume periods.",
+    "a_es": "Comienza con una conversación. Contáctame a través del formulario de contacto o directamente por correo electrónico y cuéntame sobre tu firma, tu volumen actual y el tipo de apoyo que necesitas. A partir de ahí, definimos el alcance del trabajo, firmo un NDA si es necesario y comenzamos. Me adapto a los sistemas y flujos de trabajo existentes de tu firma para que la transición sea fluida. Estoy disponible para proyectos puntuales, contratos continuos o apoyo adicional en períodos de alto volumen."
+  },
+  {
+    "id": 7,
+    "category_en": "General",
+    "category_es": "General",
+    "q_en": "Can you recommend an immigration attorney if I need legal representation?",
+    "q_es": "¿Puedes recomendar un abogado de inmigración si necesito representación legal?",
+    "a_en": "Yes, and this is one of the most important things I do. I have spent over 10 years working inside immigration law firms and building relationships with attorneys I trust and respect. If your situation requires legal representation, I will personally connect you with the right attorney for your specific case. You will not be sent to a random list — you will be connected to someone I know and stand behind.",
+    "a_es": "Sí, y esto es una de las cosas más importantes que hago. He pasado más de 10 años trabajando dentro de firmas de abogados de inmigración y construyendo relaciones con abogados en quienes confío y a quienes respeto. Si tu situación requiere representación legal, te conectaré personalmente con el abogado adecuado para tu caso específico. No te enviaré a una lista aleatoria, te conectaré con alguien que conozco y por quien respondo."
+  },
+  {
+    "id": 8,
     "category_en": "General",
     "category_es": "General",
     "q_en": "Do I need to be in Florida to work with you?",
