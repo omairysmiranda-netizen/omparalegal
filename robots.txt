@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /drafts/
+
+Sitemap: https://omparalegal.com/sitemap.xml
