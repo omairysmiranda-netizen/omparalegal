@@ -20,6 +20,16 @@ export default async function handler(req, res) {
       'Asylum process explained: steps from application to decision',
       'What documents do you need for an adjustment of status interview',
       'Removal defense: what options do you have if you receive a deportation order',
+      '5 signs your immigration firm needs a remote paralegal',
+      'How to manage a high volume immigration caseload without burning out',
+      'How to onboard a remote paralegal without disrupting your workflow',
+      'RFE response checklist every immigration attorney should have',
+      'What to look for when hiring a freelance immigration paralegal',
+      'How to scale an immigration law firm without adding full-time staff',
+      'Client intake best practices for immigration law firms',
+      'How a bilingual paralegal can improve your client retention',
+      'The real cost of a disorganized immigration case file',
+      'How remote paralegal support can help solo immigration attorneys compete',
     ];
 
     const today = new Date();
