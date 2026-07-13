@@ -244,6 +244,8 @@ function applyFilter(f) { currentFilter = f; renderGrid(f); }
 
 
 const allPostsData = [
+
+  {
   {
     date: "2026-07-13",
     category_en: "Legal Operations",
@@ -283,6 +285,37 @@ const allPostsData = [
       <h3>5. Has pensado en contratar, pero la logística te detiene.</h3>
       <p>Personal de tiempo completo significa incorporación, nómina, beneficios, gestión y espacio de oficina. La brecha entre "necesito ayuda" y "puedo contratar a alguien de tiempo completo" es exactamente donde encaja una estructura operacional basada en retención.</p>
       <p>Si tres o más de estas describen tu firma ahora mismo, el problema no es disciplina ni esfuerzo. Es estructura. Y la estructura es algo que se puede construir.</p>
+    `
+  },
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "The Difference Between Hiring a Paralegal and Having Legal Operations",
+    title_es: "La Diferencia Entre Contratar un Paralegal y Tener Operaciones Legales",
+    summary_en: "Understanding the difference between a paralegal hire and a Legal Operations structure changes how you think about what your firm actually needs.",
+    summary_es: "Entender la diferencia entre contratar un paralegal y una estructura de Operaciones Legales cambia cómo piensas sobre lo que tu firma realmente necesita.",
+    content_en: `
+      <p>When an immigration attorney decides they need help, the first instinct is usually the same: hire a paralegal. Post the role, review resumes, conduct interviews, make an offer, onboard, train, manage. It is the familiar path. It is also not the only one, and for many firms, it is not the right one.</p>
+      <h3>A paralegal is a person. Legal Operations is a system.</h3>
+      <p>When you hire a paralegal, you are adding a person to your team. That person has skills, a schedule, a capacity limit, and a learning curve. Legal Operations is the structure itself. It is the workflow, the standards, the communication protocols, the deadline tracking, and the document management working together. A Legal Operations provider brings that structure with them. You are not building it from scratch around a new hire.</p>
+      <h3>The hidden cost of a paralegal hire.</h3>
+      <p>The salary is the visible cost. What firms underestimate is everything around it. Onboarding takes weeks. Training takes months. Management takes ongoing time from the attorney. Benefits, payroll administration, and supervision are all real costs that do not appear in the job posting.</p>
+      <h3>What Legal Operations replaces versus what it adds.</h3>
+      <p>A paralegal hire adds capacity to an existing structure. If the structure is unclear, the hire inherits that lack of clarity. Legal Operations replaces the need for a structure because it brings one. The firm does not need to design how cases flow or how deadlines are tracked. That is already defined.</p>
+      <h3>Who manages whom.</h3>
+      <p>A paralegal hire requires management. That means the attorney is responsible for assigning work, reviewing output, and ensuring consistency. A Legal Operations provider manages itself. The accountability structure is built into the service. The attorney is a client of the operation, not a manager of the person doing it.</p>
+      <h3>The question is not "do I need help." It is "what kind of help do I need."</h3>
+      <p>If the answer is someone to execute tasks inside a structure you have already built, a paralegal hire may be right. If the answer is operational capacity, consistency, and a system that runs without you managing it, Legal Operations is the answer. That is the distinction OM Paralegal was built around.</p>
+    `,
+    content_es: `
+      <p>Cuando un abogado de inmigración decide que necesita ayuda, el primer instinto suele ser el mismo: contratar un paralegal. Es el camino conocido. Pero para muchas firmas, no es el correcto.</p>
+      <h3>Un paralegal es una persona. Las Operaciones Legales son un sistema.</h3>
+      <p>Cuando contratas un paralegal, estás agregando una persona a tu equipo. Las Operaciones Legales son la estructura en sí misma: el flujo de trabajo, los estándares, los protocolos de comunicación. Un proveedor de Operaciones Legales trae esa estructura consigo.</p>
+      <h3>El costo oculto de contratar un paralegal.</h3>
+      <p>El salario es el costo visible. Lo que las firmas subestiman es todo lo que lo rodea: incorporación, capacitación, gestión, beneficios y supervisión.</p>
+      <h3>La pregunta no es "¿necesito ayuda?" Es "¿qué tipo de ayuda necesito?"</h3>
+      <p>Si la respuesta es capacidad operacional, consistencia y un sistema que funciona sin que tú lo gestiones, las Operaciones Legales son la respuesta.</p>
     `
   },
   {
@@ -357,37 +390,6 @@ const allPostsData = [
     date: "2026-07-13",
     category_en: "Legal Operations",
     category_es: "Operaciones Legales",
-    title_en: "The Difference Between Hiring a Paralegal and Having Legal Operations",
-    title_es: "La Diferencia Entre Contratar un Paralegal y Tener Operaciones Legales",
-    summary_en: "Understanding the difference between a paralegal hire and a Legal Operations structure changes how you think about what your firm actually needs.",
-    summary_es: "Entender la diferencia entre contratar un paralegal y una estructura de Operaciones Legales cambia cómo piensas sobre lo que tu firma realmente necesita.",
-    content_en: `
-      <p>When an immigration attorney decides they need help, the first instinct is usually the same: hire a paralegal. Post the role, review resumes, conduct interviews, make an offer, onboard, train, manage. It is the familiar path. It is also not the only one, and for many firms, it is not the right one.</p>
-      <h3>A paralegal is a person. Legal Operations is a system.</h3>
-      <p>When you hire a paralegal, you are adding a person to your team. That person has skills, a schedule, a capacity limit, and a learning curve. Legal Operations is the structure itself. It is the workflow, the standards, the communication protocols, the deadline tracking, and the document management working together. A Legal Operations provider brings that structure with them. You are not building it from scratch around a new hire.</p>
-      <h3>The hidden cost of a paralegal hire.</h3>
-      <p>The salary is the visible cost. What firms underestimate is everything around it. Onboarding takes weeks. Training takes months. Management takes ongoing time from the attorney. Benefits, payroll administration, and supervision are all real costs that do not appear in the job posting.</p>
-      <h3>What Legal Operations replaces versus what it adds.</h3>
-      <p>A paralegal hire adds capacity to an existing structure. If the structure is unclear, the hire inherits that lack of clarity. Legal Operations replaces the need for a structure because it brings one. The firm does not need to design how cases flow or how deadlines are tracked. That is already defined.</p>
-      <h3>Who manages whom.</h3>
-      <p>A paralegal hire requires management. That means the attorney is responsible for assigning work, reviewing output, and ensuring consistency. A Legal Operations provider manages itself. The accountability structure is built into the service. The attorney is a client of the operation, not a manager of the person doing it.</p>
-      <h3>The question is not "do I need help." It is "what kind of help do I need."</h3>
-      <p>If the answer is someone to execute tasks inside a structure you have already built, a paralegal hire may be right. If the answer is operational capacity, consistency, and a system that runs without you managing it, Legal Operations is the answer. That is the distinction OM Paralegal was built around.</p>
-    `,
-    content_es: `
-      <p>Cuando un abogado de inmigración decide que necesita ayuda, el primer instinto suele ser el mismo: contratar un paralegal. Es el camino conocido. Pero para muchas firmas, no es el correcto.</p>
-      <h3>Un paralegal es una persona. Las Operaciones Legales son un sistema.</h3>
-      <p>Cuando contratas un paralegal, estás agregando una persona a tu equipo. Las Operaciones Legales son la estructura en sí misma: el flujo de trabajo, los estándares, los protocolos de comunicación. Un proveedor de Operaciones Legales trae esa estructura consigo.</p>
-      <h3>El costo oculto de contratar un paralegal.</h3>
-      <p>El salario es el costo visible. Lo que las firmas subestiman es todo lo que lo rodea: incorporación, capacitación, gestión, beneficios y supervisión.</p>
-      <h3>La pregunta no es "¿necesito ayuda?" Es "¿qué tipo de ayuda necesito?"</h3>
-      <p>Si la respuesta es capacidad operacional, consistencia y un sistema que funciona sin que tú lo gestiones, las Operaciones Legales son la respuesta.</p>
-    `
-  },
-  {
-    date: "2026-07-13",
-    category_en: "Legal Operations",
-    category_es: "Operaciones Legales",
     title_en: "What Happens to Your Caseload When You Don't Have Operational Support",
     title_es: "Qué Le Pasa a Tu Carga de Casos Cuando No Tienes Apoyo Operacional",
     summary_en: "The caseload grows. The workload grows with it. The attorney absorbs the difference. For a while, it works. Then it stops working, and by the time it stops, the damage is already done.",
@@ -419,6 +421,7 @@ const allPostsData = [
       <h3>Los casos que no puedes aceptar.</h3>
       <p>El costo más significativo de operar sin apoyo es invisible. No son los casos que salen mal. Son los casos que nunca llegan. La firma se mantiene del mismo tamaño no por elección, sino por limitación estructural.</p>
     `
+  }
   }
 ];
 
