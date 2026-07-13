@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Blog — Omairys Miranda</title>
-<meta name="description" content="Immigration insights, USCIS updates, and practical guides by Omairys Miranda, Senior Immigration Paralegal. Bilingual EN/ES."/>
+<title>Blog — OM Paralegal · Legal Operations</title>
+<meta name="description" content="Legal operations insights for immigration law firms. Written by OM Paralegal, a bilingual Legal Operations firm serving immigration attorneys nationwide."/>
 <link rel="canonical" href="https://www.omparalegal.com/blog"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -110,12 +110,9 @@
     </div>
   </a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="/#about" data-en>About</a><a href="/#about" data-es style="display:none">Sobre Mí</a></li>
-    <li><a href="/#services" data-en>Services</a><a href="/#services" data-es style="display:none">Servicios</a></li>
-    <li><a href="/noticias.html" data-en>News</a><a href="/noticias.html" data-es style="display:none">Noticias</a></li>
-    <li><a href="/recursos.html" data-en>Resources</a><a href="/recursos.html" data-es style="display:none">Recursos</a></li>
+    <li><a href="/#about" data-en>About</a><a href="/#about" data-es style="display:none">La Firma</a></li>
+    <li><a href="/#services" data-en>Plans</a><a href="/#services" data-es style="display:none">Planes</a></li>
     <li><a href="/faq.html" data-en>FAQ</a><a href="/faq.html" data-es style="display:none">FAQ</a></li>
-    <li><a href="/directorio.html" data-en>Directory</a><a href="/directorio.html" data-es style="display:none">Directorio</a></li>
     <li><a href="/blog.html" class="active" data-en>Blog</a><a href="/blog.html" class="active" data-es style="display:none">Blog</a></li>
     <li><a href="/#contact" data-en>Contact</a><a href="/#contact" data-es style="display:none">Contacto</a></li>
   </ul>
@@ -129,7 +126,7 @@
   <p class="section-label" data-es style="display:none">Perspectivas de Inmigración</p>
   <h1 data-en>The <em>Blog</em></h1>
   <h1 data-es style="display:none">El <em>Blog</em></h1>
-  <p data-en>Practical guides, USCIS updates, and immigration insights — published daily, in English and Spanish.</p>
+  <p data-en>Legal operations insights for immigration law firms. Written by OM Paralegal.</p>
   <p data-es style="display:none">Guías prácticas, actualizaciones de USCIS y perspectivas de inmigración, publicadas diariamente en inglés y español.</p>
 </div>
 
@@ -213,8 +210,8 @@ function showPost(index) {
   const p = allPosts[index];
   const view = document.getElementById('post-view');
   const readMore = isEs() ? 'Leer más →' : 'Read more →';
-  const ctaText = isEs() ? '¿Tienes preguntas sobre tu caso? Contáctame para una consulta.' : 'Have questions about your case? Contact me for a consultation.';
-  const ctaBtn = isEs() ? 'Contáctame' : 'Contact Me';
+  const ctaText = isEs() ? 'Listo para estructurar las operaciones de tu firma? Agenda una llamada.' : 'Ready to build operational structure into your firm? case? Contact me for a consultation.';
+  const ctaBtn = isEs() ? 'Agenda una Llamada' : 'Schedule a Discovery Call';
 
   view.innerHTML = `
     <button class="back-btn" onclick="showGrid()">← ${isEs() ? 'Volver al Blog' : 'Back to Blog'}</button>
@@ -245,18 +242,189 @@ function showGrid() {
 
 function applyFilter(f) { currentFilter = f; renderGrid(f); }
 
-async function loadPosts() {
-  try {
-    const res = await fetch('/api/blog-posts');
-    if (!res.ok) { renderGrid('all'); return; }
-    allPosts = await res.json();
-    renderGrid('all');
-  } catch {
-    renderGrid('all');
-  }
-}
 
-loadPosts();
+const allPostsData = [
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "5 Signs Your Immigration Firm Needs Operational Support",
+    title_es: "5 Señales de que Tu Firma Necesita Apoyo Operacional",
+    summary_en: "There is a version of a busy immigration practice that looks productive from the outside. But underneath that activity, the attorney is the one holding everything together, manually.",
+    summary_es: "Hay una versión de una práctica de inmigración ocupada que parece productiva desde afuera. Pero debajo de esa actividad, el abogado es quien mantiene todo unido, manualmente.",
+    content_en: `
+      <p>There is a version of a busy immigration practice that looks productive from the outside. Cases are moving, clients are calling, filings are going out. But underneath that activity, the attorney is the one holding everything together, manually. The cases, the deadlines, the follow-ups, the documents, the client communication. All of it.</p>
+      <p>That is not a firm running well. That is a firm running on one person.</p>
+      <p>These are the five signs that what your firm needs is not more hours or more effort. It is operational support.</p>
+      <h3>1. You are the last line of defense on every deadline.</h3>
+      <p>If a filing date gets missed, it is because you forgot it, not because a system failed. You are the system. There is no one tracking deadlines independently, flagging what is coming, or preparing filings before the urgency hits. Every deadline feels like a sprint because nothing is built to catch it before it becomes critical. Operational support exists specifically to remove you from that position.</p>
+      <h3>2. Client follow-up falls through when you get busy.</h3>
+      <p>Your clients need documents, translations, updates, and answers. When your caseload peaks, that communication slows down or stops. Clients feel ignored. Cases stall waiting on documents that were never properly requested or tracked. A dedicated operational structure handles client follow-up as a standard function, not as something you get to when you have time.</p>
+      <h3>3. You spend more time preparing cases than practicing law.</h3>
+      <p>Form completion, evidence organization, case indexing, USCIS updates. These are necessary. They are also not what you went to law school to do. When the majority of your working hours go to operational tasks, you are not growing a firm. You are running one on manual labor. The attorneys who scale do so because they have support that handles the operational layer so they can stay in the legal layer.</p>
+      <h3>4. You cannot take on more cases, but not because of capacity.</h3>
+      <p>You have the skills. You have the clients. But adding one more case to your current structure feels impossible because you know what that means: more of everything you are already barely keeping up with. That ceiling is not a legal ceiling. It is an operational one. The right support removes it.</p>
+      <h3>5. You have thought about hiring, but the logistics stop you.</h3>
+      <p>Full-time staff means onboarding, payroll, benefits, management, office space, and consistency you cannot always guarantee in a lean practice. The gap between "I need help" and "I can hire someone full-time" is exactly where a retainer-based operational structure fits. Reserved capacity, dedicated support, without the overhead of a full-time hire.</p>
+      <p>If three or more of these describe your firm right now, the issue is not discipline or effort. It is structure. And structure is something that can be built.</p>
+    `,
+    content_es: `
+      <p>Hay una versión de una práctica de inmigración ocupada que parece productiva desde afuera. Los casos avanzan, los clientes llaman, las presentaciones salen. Pero debajo de esa actividad, el abogado es quien mantiene todo unido, manualmente.</p>
+      <p>Eso no es una firma que funciona bien. Es una firma que funciona gracias a una sola persona.</p>
+      <p>Estas son las cinco señales de que lo que tu firma necesita no son más horas ni más esfuerzo. Es apoyo operacional.</p>
+      <h3>1. Eres la última línea de defensa en cada fecha límite.</h3>
+      <p>Si se pierde una fecha de presentación, es porque tú lo olvidaste, no porque un sistema falló. Tú eres el sistema. No hay nadie rastreando fechas límite de forma independiente. El apoyo operacional existe específicamente para sacarte de esa posición.</p>
+      <h3>2. El seguimiento a clientes se pierde cuando estás ocupado.</h3>
+      <p>Tus clientes necesitan documentos, traducciones, actualizaciones y respuestas. Cuando tu carga de casos aumenta, esa comunicación se ralentiza o se detiene. Una estructura operacional dedicada maneja el seguimiento como función estándar.</p>
+      <h3>3. Pasas más tiempo preparando casos que practicando derecho.</h3>
+      <p>Llenado de formularios, organización de evidencia, actualizaciones de USCIS. Son necesarios. Pero no es para lo que fuiste a la escuela de derecho. Los abogados que escalan lo hacen porque tienen apoyo que maneja la capa operacional.</p>
+      <h3>4. No puedes aceptar más casos, pero no por falta de capacidad.</h3>
+      <p>Tienes las habilidades. Tienes los clientes. Pero agregar un caso más a tu estructura actual se siente imposible. Ese techo no es un techo legal. Es operacional. El apoyo correcto lo elimina.</p>
+      <h3>5. Has pensado en contratar, pero la logística te detiene.</h3>
+      <p>Personal de tiempo completo significa incorporación, nómina, beneficios, gestión y espacio de oficina. La brecha entre "necesito ayuda" y "puedo contratar a alguien de tiempo completo" es exactamente donde encaja una estructura operacional basada en retención.</p>
+      <p>Si tres o más de estas describen tu firma ahora mismo, el problema no es disciplina ni esfuerzo. Es estructura. Y la estructura es algo que se puede construir.</p>
+    `
+  },
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "Why Bilingual Paralegal Support Is Not Optional for Immigration Firms",
+    title_es: "Por Qué el Apoyo Paralegal Bilingüe No Es Opcional para Firmas de Inmigración",
+    summary_en: "A client can have the best immigration attorney in the room and still feel lost if the person handling their documents does not speak their language with fluency, not just vocabulary.",
+    summary_es: "Un cliente puede tener al mejor abogado de inmigración y aún así sentirse perdido si la persona que maneja sus documentos no habla su idioma con fluidez.",
+    content_en: `
+      <p>Most immigration attorneys understand the value of speaking their client's language. What is less discussed is what happens operationally when that bilingual capacity does not extend to the support structure behind the attorney.</p>
+      <p>A client can have the best immigration attorney in the room and still feel lost if the person handling their documents, following up on their case, or explaining the next steps does not speak their language with fluency, not just vocabulary.</p>
+      <p>This is the gap that bilingual operational support closes.</p>
+      <h3>The attorney cannot be the only bilingual point of contact.</h3>
+      <p>When a firm's bilingual capacity lives entirely in the attorney, every Spanish-speaking client interaction has to route through that one person. Document questions, status updates, missing paperwork, confusion about next steps. All of it lands on the attorney directly. That is not sustainable, and it is not a good client experience. A bilingual operational structure means the attorney is not the only one who can communicate effectively with the client.</p>
+      <h3>Translation is not the same as communication.</h3>
+      <p>Running Spanish conversations through a translation tool or through a team member with limited fluency is not the same as having someone who understands immigration context in both languages. The difference between what a client says and what they mean often lives in tone and cultural context, not in the literal words. Bilingual support that understands immigration law brings accuracy to every client interaction.</p>
+      <h3>Your Spanish-speaking clients are not a niche. They are your practice.</h3>
+      <p>For most immigration firms, the majority of clients are Spanish speakers. That is not a demographic footnote. It is the foundation of the practice. Treating bilingual support as an add-on rather than a baseline reflects a mismatch between who the firm serves and how the firm is structured to serve them.</p>
+      <h3>The risk of getting this wrong is not just operational.</h3>
+      <p>A client who does not feel understood does not refer. A client who receives confusing or inaccurate communication becomes a complaint, or worse, a case that stalls because documents were not collected correctly from the start. The cost of inadequate bilingual support is not just inefficiency. It is trust.</p>
+      <h3>What bilingual operational support actually looks like.</h3>
+      <p>It is not a team member who "speaks some Spanish." It is a dedicated operational structure where every client-facing function is handled with full fluency in both languages. Where the attorney never has to translate, interpret, or re-explain what their support team communicated incorrectly. That is the standard OM Paralegal holds.</p>
+    `,
+    content_es: `
+      <p>La mayoría de los abogados de inmigración entienden el valor de hablar el idioma de su cliente. Lo que se discute menos es qué sucede operacionalmente cuando esa capacidad bilingüe no se extiende a la estructura de apoyo detrás del abogado.</p>
+      <h3>El abogado no puede ser el único punto de contacto bilingüe.</h3>
+      <p>Cuando la capacidad bilingüe de una firma reside enteramente en el abogado, cada interacción con clientes hispanohablantes debe pasar por esa única persona. Una estructura operacional bilingüe significa que el abogado no es el único que puede comunicarse eficazmente con el cliente.</p>
+      <h3>La traducción no es lo mismo que la comunicación.</h3>
+      <p>Pasar conversaciones en español por una herramienta de traducción no es lo mismo que tener a alguien que entiende el contexto de inmigración en ambos idiomas. El apoyo bilingüe que entiende la ley de inmigración trae precisión a cada interacción con el cliente.</p>
+      <h3>Tus clientes hispanohablantes no son un nicho. Son tu práctica.</h3>
+      <p>Para la mayoría de las firmas de inmigración, la mayoría de los clientes son hispanohablantes. Tratar el apoyo bilingüe como un complemento en lugar de una base refleja una desconexión entre a quién sirve la firma y cómo está estructurada para servirles.</p>
+      <h3>El riesgo de hacerlo mal no es solo operacional.</h3>
+      <p>Un cliente que no se siente comprendido no refiere. El costo del apoyo bilingüe inadecuado no es solo ineficiencia. Es confianza.</p>
+    `
+  },
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "How Retainer-Based Paralegal Support Changes How Your Firm Operates",
+    title_es: "Cómo el Apoyo Paralegal por Retención Cambia la Operación de Tu Firma",
+    summary_en: "Retainer-based support is not about paying in advance for hours. It is about building an operational relationship that makes your firm run differently.",
+    summary_es: "El apoyo por retención no se trata de pagar por adelantado horas de trabajo. Se trata de construir una relación operacional que hace que tu firma funcione de manera diferente.",
+    content_en: `
+      <p>Most attorneys who have worked with freelance or per-project paralegal support know the pattern. You need help, you find someone, you explain the case, you wait, you review, you correct, you move on. Then the next case starts the same way. Every engagement begins from zero.</p>
+      <p>That model works for isolated tasks. It does not work for a firm that needs to operate consistently.</p>
+      <p>Retainer-based support is a different structure entirely. It is not about paying in advance for hours. It is about building an operational relationship that makes your firm run differently.</p>
+      <h3>The difference between a transaction and a structure.</h3>
+      <p>When you hire support on a per-task basis, you are buying a deliverable. There is no continuity, no institutional knowledge, and no one who understands how your firm works. A retainer changes that. It establishes a dedicated operational presence that stays, learns your filing preferences, your communication style, your client base, and your standards.</p>
+      <h3>Consistency is not a luxury. It is an operational requirement.</h3>
+      <p>Immigration law does not pause. A firm that depends on on-demand support has gaps built into its structure. Gaps when the freelancer is unavailable. Gaps when a new task requires a new explanation. Retainer-based support eliminates those gaps. Reserved capacity means the support is there before you need it, not after you realize you do.</p>
+      <h3>What changes inside the firm.</h3>
+      <p>Attorneys who move to retainer-based operational support describe a shift that goes beyond efficiency. They stop carrying the operational weight of the practice mentally. Deadlines are tracked without them having to track them. Clients are followed up with without them having to remember. That mental offload changes how an attorney works.</p>
+      <h3>It scales with your firm, not against it.</h3>
+      <p>Per-task support costs more as your volume grows. A retainer is a fixed operational foundation. As your caseload increases, the support absorbs it. The structure that works for ten cases works for thirty.</p>
+      <h3>Reserved capacity is the operative phrase.</h3>
+      <p>The retainer model means your firm has dedicated operational capacity that belongs to you. It is not shared across ten other clients. It is reserved. That is what allows the kind of responsiveness and quality that a high-volume outsourcing model cannot deliver. OM Paralegal works with a limited number of firms for exactly this reason.</p>
+    `,
+    content_es: `
+      <p>La mayoría de los abogados que han trabajado con apoyo paralegal por proyecto conocen el patrón. Necesitas ayuda, encuentras a alguien, explicas el caso, esperas, revisas, corriges, sigues adelante. Luego el siguiente caso comienza de la misma manera. Cada compromiso comienza desde cero.</p>
+      <h3>La diferencia entre una transacción y una estructura.</h3>
+      <p>Cuando contratas apoyo por tarea, estás comprando un entregable. No hay continuidad, no hay conocimiento institucional. Una retención cambia eso. Establece una presencia operacional dedicada que se queda y aprende cómo funciona tu firma.</p>
+      <h3>La consistencia no es un lujo. Es un requisito operacional.</h3>
+      <p>La ley de inmigración no se pausa. Una firma que depende del apoyo bajo demanda tiene brechas integradas en su estructura. El apoyo basado en retención elimina esas brechas.</p>
+      <h3>Escala con tu firma, no en su contra.</h3>
+      <p>El apoyo por tarea cuesta más a medida que crece tu volumen. Una retención es una base operacional fija. A medida que aumenta tu carga de casos, el apoyo la absorbe.</p>
+    `
+  },
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "The Difference Between Hiring a Paralegal and Having Legal Operations",
+    title_es: "La Diferencia Entre Contratar un Paralegal y Tener Operaciones Legales",
+    summary_en: "Understanding the difference between a paralegal hire and a Legal Operations structure changes how you think about what your firm actually needs.",
+    summary_es: "Entender la diferencia entre contratar un paralegal y una estructura de Operaciones Legales cambia cómo piensas sobre lo que tu firma realmente necesita.",
+    content_en: `
+      <p>When an immigration attorney decides they need help, the first instinct is usually the same: hire a paralegal. Post the role, review resumes, conduct interviews, make an offer, onboard, train, manage. It is the familiar path. It is also not the only one, and for many firms, it is not the right one.</p>
+      <h3>A paralegal is a person. Legal Operations is a system.</h3>
+      <p>When you hire a paralegal, you are adding a person to your team. That person has skills, a schedule, a capacity limit, and a learning curve. Legal Operations is the structure itself. It is the workflow, the standards, the communication protocols, the deadline tracking, and the document management working together. A Legal Operations provider brings that structure with them. You are not building it from scratch around a new hire.</p>
+      <h3>The hidden cost of a paralegal hire.</h3>
+      <p>The salary is the visible cost. What firms underestimate is everything around it. Onboarding takes weeks. Training takes months. Management takes ongoing time from the attorney. Benefits, payroll administration, and supervision are all real costs that do not appear in the job posting.</p>
+      <h3>What Legal Operations replaces versus what it adds.</h3>
+      <p>A paralegal hire adds capacity to an existing structure. If the structure is unclear, the hire inherits that lack of clarity. Legal Operations replaces the need for a structure because it brings one. The firm does not need to design how cases flow or how deadlines are tracked. That is already defined.</p>
+      <h3>Who manages whom.</h3>
+      <p>A paralegal hire requires management. That means the attorney is responsible for assigning work, reviewing output, and ensuring consistency. A Legal Operations provider manages itself. The accountability structure is built into the service. The attorney is a client of the operation, not a manager of the person doing it.</p>
+      <h3>The question is not "do I need help." It is "what kind of help do I need."</h3>
+      <p>If the answer is someone to execute tasks inside a structure you have already built, a paralegal hire may be right. If the answer is operational capacity, consistency, and a system that runs without you managing it, Legal Operations is the answer. That is the distinction OM Paralegal was built around.</p>
+    `,
+    content_es: `
+      <p>Cuando un abogado de inmigración decide que necesita ayuda, el primer instinto suele ser el mismo: contratar un paralegal. Es el camino conocido. Pero para muchas firmas, no es el correcto.</p>
+      <h3>Un paralegal es una persona. Las Operaciones Legales son un sistema.</h3>
+      <p>Cuando contratas un paralegal, estás agregando una persona a tu equipo. Las Operaciones Legales son la estructura en sí misma: el flujo de trabajo, los estándares, los protocolos de comunicación. Un proveedor de Operaciones Legales trae esa estructura consigo.</p>
+      <h3>El costo oculto de contratar un paralegal.</h3>
+      <p>El salario es el costo visible. Lo que las firmas subestiman es todo lo que lo rodea: incorporación, capacitación, gestión, beneficios y supervisión.</p>
+      <h3>La pregunta no es "¿necesito ayuda?" Es "¿qué tipo de ayuda necesito?"</h3>
+      <p>Si la respuesta es capacidad operacional, consistencia y un sistema que funciona sin que tú lo gestiones, las Operaciones Legales son la respuesta.</p>
+    `
+  },
+  {
+    date: "2026-07-13",
+    category_en: "Legal Operations",
+    category_es: "Operaciones Legales",
+    title_en: "What Happens to Your Caseload When You Don't Have Operational Support",
+    title_es: "Qué Le Pasa a Tu Carga de Casos Cuando No Tienes Apoyo Operacional",
+    summary_en: "The caseload grows. The workload grows with it. The attorney absorbs the difference. For a while, it works. Then it stops working, and by the time it stops, the damage is already done.",
+    summary_es: "La carga de casos crece. La carga de trabajo crece con ella. El abogado absorbe la diferencia. Por un tiempo funciona. Luego deja de funcionar.",
+    content_en: `
+      <p>There is a version of this story that most immigration attorneys know personally. The caseload grows. The workload grows with it. The attorney absorbs the difference. For a while, it works. Then it stops working, and by the time it stops, the damage is already done.</p>
+      <p>This is not a story about failure. It is a story about structure, and what happens when a firm grows faster than the operational foundation beneath it.</p>
+      <h3>Cases stop moving at the same speed.</h3>
+      <p>The first thing that slows is momentum. A case that should take two weeks to prepare takes four because the attorney is managing three other cases at the same level of involvement. Without a dedicated structure handling the operational layer, cases move at the speed of the attorney's availability, not at the speed the cases require.</p>
+      <h3>Deadlines become emergencies.</h3>
+      <p>In a well-structured firm, a deadline is a date on a calendar that triggers a preparation process well in advance. In a firm without operational support, a deadline is something the attorney remembers, or does not, depending on what else is happening that week. The cases that suffer are not always the ones the attorney is most worried about. They are the quiet ones.</p>
+      <h3>Client communication becomes reactive.</h3>
+      <p>When operational support is absent, client communication happens when the attorney has time for it. Which means it often happens after the client has already called twice and sent three emails. That experience does not just create frustration. It creates doubt. And doubt in an immigration attorney-client relationship is something that is very difficult to recover from.</p>
+      <h3>The attorney becomes the bottleneck.</h3>
+      <p>Every case passes through one person. Every question, every document, every status update. The attorney is not just practicing law. They are also the intake coordinator, the case manager, the client liaison, and the filing clerk. The bottleneck tightens as the caseload grows.</p>
+      <h3>The cases you cannot take.</h3>
+      <p>Perhaps the most significant cost of operating without support is invisible. It is not the cases that go wrong. It is the cases that never come in. An attorney at operational capacity turns away referrals or gives prospective clients a timeline that sends them elsewhere. The firm stays the same size not by choice, but by structural limitation.</p>
+      <h3>What changes when the structure is in place.</h3>
+      <p>Cases move on schedule because someone is managing the timeline independently of the attorney's bandwidth. Clients receive updates because follow-up is a function of the operation. Deadlines are prepared for because a dedicated presence is tracking them from the moment the case opens. The attorney practices law. The operation handles everything that surrounds it.</p>
+    `,
+    content_es: `
+      <p>La carga de casos crece. La carga de trabajo crece con ella. El abogado absorbe la diferencia. Por un tiempo funciona. Luego deja de funcionar, y para cuando deja de funcionar, el daño ya está hecho.</p>
+      <h3>Los casos dejan de moverse a la misma velocidad.</h3>
+      <p>Lo primero que se ralentiza es el impulso. Un caso que debería tardar dos semanas en prepararse tarda cuatro. Sin una estructura dedicada que maneje la capa operacional, los casos se mueven a la velocidad de la disponibilidad del abogado.</p>
+      <h3>Las fechas límite se convierten en emergencias.</h3>
+      <p>En una firma bien estructurada, una fecha límite desencadena un proceso de preparación con anticipación. En una firma sin apoyo operacional, es algo que el abogado recuerda, o no, dependiendo de lo que esté pasando esa semana.</p>
+      <h3>El abogado se convierte en el cuello de botella.</h3>
+      <p>Cada caso pasa por una sola persona. El cuello de botella se estrecha a medida que crece la carga de casos.</p>
+      <h3>Los casos que no puedes aceptar.</h3>
+      <p>El costo más significativo de operar sin apoyo es invisible. No son los casos que salen mal. Son los casos que nunca llegan. La firma se mantiene del mismo tamaño no por elección, sino por limitación estructural.</p>
+    `
+  }
+];
+
+allPosts = allPostsData;
+renderGrid('all');
+
 </script>
 </body>
 </html>
